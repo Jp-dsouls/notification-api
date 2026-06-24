@@ -20,6 +20,11 @@ export class ProductsController {
     return this.productsService.findAll(page || 1, limit || 10);
   }
 
+  @Get('by-api-key/:apiKey')
+  findByApiKey(@Param('apiKey') apiKey: string) {
+    return this.productsService.findByApiKey(apiKey);
+  }
+
   @Get(':id')
   findOne(@Param('id') id: string) {
     return this.productsService.findOne(id);
