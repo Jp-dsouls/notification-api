@@ -12,10 +12,10 @@ export declare class TemplatesService {
             name: string;
         };
     } & {
+        name: string;
         id: string;
         productId: string;
         channelId: string;
-        name: string;
         body: string;
         createdAt: Date;
         updatedAt: Date;
@@ -28,10 +28,10 @@ export declare class TemplatesService {
             name: string;
         };
     } & {
+        name: string;
         id: string;
         productId: string;
         channelId: string;
-        name: string;
         body: string;
         createdAt: Date;
         updatedAt: Date;
@@ -44,19 +44,19 @@ export declare class TemplatesService {
             name: string;
         };
     } & {
+        name: string;
         id: string;
         productId: string;
         channelId: string;
-        name: string;
         body: string;
         createdAt: Date;
         updatedAt: Date;
     }>;
     update(id: string, updateTemplateDto: UpdateTemplateDto): Promise<{
+        name: string;
         id: string;
         productId: string;
         channelId: string;
-        name: string;
         body: string;
         createdAt: Date;
         updatedAt: Date;

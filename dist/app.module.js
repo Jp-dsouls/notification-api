@@ -11,6 +11,7 @@ const common_1 = require("@nestjs/common");
 const config_1 = require("@nestjs/config");
 const prisma_module_1 = require("./prisma/prisma.module");
 const common_module_1 = require("./common/common.module");
+const logger_module_1 = require("./logger/logger.module");
 const products_module_1 = require("./products/products.module");
 const channels_module_1 = require("./channels/channels.module");
 const product_channels_module_1 = require("./product-channels/product-channels.module");
@@ -26,6 +27,7 @@ exports.AppModule = AppModule = __decorate([
                 isGlobal: true,
             }),
             common_module_1.CommonModule,
+            logger_module_1.LoggerModule,
             prisma_module_1.PrismaModule,
             products_module_1.ProductsModule,
             channels_module_1.ChannelsModule,

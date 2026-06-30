@@ -5,20 +5,20 @@ export declare class ProductsService {
     private readonly prisma;
     constructor(prisma: PrismaService);
     create(createProductDto: CreateProductDto): Promise<{
-        id: string;
+        apiKey: string;
         name: string;
+        id: string;
         createdAt: Date;
         updatedAt: Date;
-        apiKey: string;
         status: boolean;
     }>;
     findAll(page?: number, limit?: number): Promise<{
         data: {
-            id: string;
+            apiKey: string;
             name: string;
+            id: string;
             createdAt: Date;
             updatedAt: Date;
-            apiKey: string;
             status: boolean;
         }[];
         total: number;
@@ -29,8 +29,8 @@ export declare class ProductsService {
     findOne(id: string): Promise<{
         productChannels: ({
             channel: {
-                id: string;
                 name: string;
+                id: string;
                 createdAt: Date;
                 updatedAt: Date;
                 configSchema: import("@prisma/client/runtime/library").JsonValue;
@@ -44,27 +44,27 @@ export declare class ProductsService {
             isEnabled: boolean;
         })[];
     } & {
-        id: string;
+        apiKey: string;
         name: string;
+        id: string;
         createdAt: Date;
         updatedAt: Date;
-        apiKey: string;
         status: boolean;
     }>;
     findByApiKey(apiKey: string): Promise<{
-        id: string;
+        apiKey: string;
         name: string;
+        id: string;
         createdAt: Date;
         updatedAt: Date;
-        apiKey: string;
         status: boolean;
     }>;
     updateStatus(id: string, updateProductStatusDto: UpdateProductStatusDto): Promise<{
-        id: string;
+        apiKey: string;
         name: string;
+        id: string;
         createdAt: Date;
         updatedAt: Date;
-        apiKey: string;
         status: boolean;
     }>;
 }

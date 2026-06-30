@@ -24,8 +24,8 @@ export declare class ProductChannelsService {
     }>;
     getProductChannels(productId: string): Promise<({
         channel: {
-            id: string;
             name: string;
+            id: string;
             createdAt: Date;
             updatedAt: Date;
             configSchema: import("@prisma/client/runtime/library").JsonValue;
