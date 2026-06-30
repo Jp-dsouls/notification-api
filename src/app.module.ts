@@ -8,6 +8,7 @@ import { ChannelsModule } from './channels/channels.module';
 import { ProductChannelsModule } from './product-channels/product-channels.module';
 import { TemplatesModule } from './templates/templates.module';
 import { NotificationsModule } from './notifications/notifications.module';
+import { HealthModule } from './health/health.module';
 
 @Module({
   imports: [
@@ -22,6 +23,7 @@ import { NotificationsModule } from './notifications/notifications.module';
     ProductChannelsModule,
     TemplatesModule,
     NotificationsModule,
+    HealthModule,
   ],
 })
 export class AppModule {}

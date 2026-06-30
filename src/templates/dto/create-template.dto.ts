@@ -1,4 +1,5 @@
 import { IsNotEmpty, IsString, IsUUID } from 'class-validator';
+import { Sanitize } from 'class-sanitizer';
 import { ApiProperty } from '@nestjs/swagger';
 
 export class CreateTemplateDto {
@@ -20,5 +21,6 @@ export class CreateTemplateDto {
   @ApiProperty({ description: 'Template body with {{variable}} placeholders', example: 'Hello {{name}}, welcome to {{company}}!' })
   @IsString()
   @IsNotEmpty()
+  @Sanitize()
   body: string;
 }
