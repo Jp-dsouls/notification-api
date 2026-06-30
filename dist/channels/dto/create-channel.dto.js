@@ -11,12 +11,18 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.CreateChannelDto = void 0;
 const class_validator_1 = require("class-validator");
+const swagger_1 = require("@nestjs/swagger");
 class CreateChannelDto {
 }
 exports.CreateChannelDto = CreateChannelDto;
 __decorate([
+    (0, swagger_1.ApiProperty)({ description: 'Channel name', example: 'Email' }),
     (0, class_validator_1.IsString)(),
     (0, class_validator_1.IsNotEmpty)(),
     __metadata("design:type", String)
 ], CreateChannelDto.prototype, "name", void 0);
+__decorate([
+    (0, swagger_1.ApiProperty)({ description: 'Provider configuration schema', example: { provider: 'smtp', host: 'smtp.example.com' } }),
+    __metadata("design:type", Object)
+], CreateChannelDto.prototype, "configSchema", void 0);
 //# sourceMappingURL=create-channel.dto.js.map

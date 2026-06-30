@@ -11,10 +11,12 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.UpdateChannelDto = void 0;
 const class_validator_1 = require("class-validator");
+const swagger_1 = require("@nestjs/swagger");
 class UpdateChannelDto {
 }
 exports.UpdateChannelDto = UpdateChannelDto;
 __decorate([
+    (0, swagger_1.ApiPropertyOptional)({ description: 'Updated provider configuration schema' }),
     (0, class_validator_1.IsOptional)(),
     __metadata("design:type", Object)
 ], UpdateChannelDto.prototype, "configSchema", void 0);

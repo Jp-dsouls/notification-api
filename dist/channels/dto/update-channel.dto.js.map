@@ -1,1 +1,1 @@
-{"version":3,"file":"update-channel.dto.js","sourceRoot":"","sources":["../../../src/channels/dto/update-channel.dto.ts"],"names":[],"mappings":";;;;;;;;;;;;AAAA,qDAA6C;AAE7C,MAAa,gBAAgB;CAG5B;AAHD,4CAGC;AADC;IADC,IAAA,4BAAU,GAAE;;sDACU"}
+{"version":3,"file":"update-channel.dto.js","sourceRoot":"","sources":["../../../src/channels/dto/update-channel.dto.ts"],"names":[],"mappings":";;;;;;;;;;;;AAAA,qDAA6C;AAC7C,6CAAsD;AAEtD,MAAa,gBAAgB;CAI5B;AAJD,4CAIC;AADC;IAFC,IAAA,6BAAmB,EAAC,EAAE,WAAW,EAAE,uCAAuC,EAAE,CAAC;IAC7E,IAAA,4BAAU,GAAE;;sDACU"}

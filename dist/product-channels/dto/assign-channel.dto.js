@@ -11,10 +11,12 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.AssignChannelDto = void 0;
 const class_validator_1 = require("class-validator");
+const swagger_1 = require("@nestjs/swagger");
 class AssignChannelDto {
 }
 exports.AssignChannelDto = AssignChannelDto;
 __decorate([
+    (0, swagger_1.ApiPropertyOptional)({ description: 'Channel enabled status', example: true }),
     (0, class_validator_1.IsBoolean)(),
     (0, class_validator_1.IsOptional)(),
     __metadata("design:type", Boolean)

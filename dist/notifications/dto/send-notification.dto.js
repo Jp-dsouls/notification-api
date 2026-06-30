@@ -11,20 +11,24 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.SendNotificationDto = void 0;
 const class_validator_1 = require("class-validator");
+const swagger_1 = require("@nestjs/swagger");
 class SendNotificationDto {
 }
 exports.SendNotificationDto = SendNotificationDto;
 __decorate([
+    (0, swagger_1.ApiProperty)({ description: 'Template UUID to use for this notification' }),
     (0, class_validator_1.IsUUID)(),
     (0, class_validator_1.IsNotEmpty)(),
     __metadata("design:type", String)
 ], SendNotificationDto.prototype, "templateId", void 0);
 __decorate([
+    (0, swagger_1.ApiProperty)({ description: 'Destination (email, phone number, etc.)', example: 'user@example.com' }),
     (0, class_validator_1.IsString)(),
     (0, class_validator_1.IsNotEmpty)(),
     __metadata("design:type", String)
 ], SendNotificationDto.prototype, "destination", void 0);
 __decorate([
+    (0, swagger_1.ApiPropertyOptional)({ description: 'Variables to replace in template body', example: { name: 'John', company: 'Acme' } }),
     (0, class_validator_1.IsObject)(),
     (0, class_validator_1.IsOptional)(),
     __metadata("design:type", Object)

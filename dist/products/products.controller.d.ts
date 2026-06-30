@@ -26,6 +26,14 @@ export declare class ProductsController {
         limit: number;
         totalPages: number;
     }>;
+    findByApiKey(apiKey: string): Promise<{
+        id: string;
+        name: string;
+        createdAt: Date;
+        updatedAt: Date;
+        apiKey: string;
+        status: boolean;
+    }>;
     findOne(id: string): Promise<{
         productChannels: ({
             channel: {
