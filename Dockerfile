@@ -6,7 +6,7 @@ COPY package*.json ./
 RUN npm ci
 
 COPY . .
-RUN npx prisma generate
+RUN npx prisma generate --schema=./database/schema.prisma
 RUN npm run build
 
 FROM node:22-alpine
